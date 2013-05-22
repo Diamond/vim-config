@@ -1,0 +1,20 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set expandtab
+set ignorecase
+set smartcase
+nmap <Leader>s :source $MYVIMRC
+nmap <Leader>v :e $MYVIMRC
+nmap <Leader>e :e
+set autoindent
+set smartindent
+set cindent
+noremap <F4> :set hlsearch! hlsearch?<CR>
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+nmap <Leader>r :!bundle exec rspec %
+nmap <Leader>p :!bundle exec rake parallel:spec
+noremap <F5> :CommandTFlush<CR>

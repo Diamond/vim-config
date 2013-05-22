@@ -1,0 +1,10 @@
+have_header: checking for ruby.h... -------------------- yes
+
+"/usr/local/bin/gcc-4.2 -E -I. -I/Users/brichy/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/i686-darwin12.3.0 -I.  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libxml2/include -I/usr/local/opt/libxslt/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include -I/usr/local/opt/sqlite/include  -fno-common -pipe -fno-common    conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <ruby.h>
+/* end */
+
+--------------------
+

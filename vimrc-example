@@ -21,6 +21,7 @@ nmap <Leader>p :!bundle exec rake parallel:spec
 nmap <Leader>z :execute "!zeus rspec %:" . line(".")
 nmap <Leader>Z :!zeus rspec %
 nmap <Leader>d :NERDTree<CR>
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ag
+nnoremap <leader>c :Ack
 noremap <F5> :CommandTFlush<CR>
 let g:CommandTMaxFiles=50000

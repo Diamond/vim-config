@@ -15,13 +15,20 @@ set smartindent
 set cindent
 noremap <F4> :set hlsearch! hlsearch?<CR>
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-nmap <Leader>r :execute "!bundle exec rspec %:" . line(".")
+nmap <Leader>r :execute "!bundle exec rspec % -l " . line(".")
 nmap <Leader>R :!bundle exec rspec %
 nmap <Leader>p :!bundle exec rake parallel:spec
-nmap <Leader>z :execute "!zeus rspec %:" . line(".")
+nmap <Leader>z :execute "!zeus rspec % -l " . line(".")
 nmap <Leader>Z :!zeus rspec %
 nmap <Leader>d :NERDTree<CR>
-nnoremap <leader>a :Ag
-nnoremap <leader>c :Ack
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>a :Ag 
+nnoremap <leader>c :Ack 
 noremap <F5> :CommandTFlush<CR>
 let g:CommandTMaxFiles=50000
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+nnoremap ; :
+inoremap jj <ESC>

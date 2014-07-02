@@ -1,0 +1,23 @@
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+alias ls="ls -G"
+alias l="ls -l"
+alias be="bundle exec"
+alias ber="bundle exec ruby"
+alias dd="cd ~/Documents/dev"
+alias gs="git status"
+alias gco="git checkout"
+alias gum="git fetch && git checkout master && git pull origin master"
+alias gf="git fetch"
+alias gd="git diff"
+alias www="cd /Library/WebServer/Documents"
+alias v="vim"
+
+PATH=$PATH:/usr/local/share/npm/bin
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+if [ -f /usr/local/share/npm/lib/node_modules/meteorite/completions/mrt.bash ]; then
+  . /usr/local/share/npm/lib/node_modules/meteorite/completions/mrt.bash
+fi
+
+source "~/git-prompt.sh"
+PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;30m\]\h\[\033[01;34m\] \w\[\033[35m\]$(__git_ps1 " %s") \[\033[01;30m\]>\[\033[00m\] '

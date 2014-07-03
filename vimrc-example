@@ -25,7 +25,6 @@ nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>a :Ag 
 nnoremap <leader>c :Ack 
-noremap <F5> :CommandTFlush<CR>
 let g:CommandTMaxFiles=50000
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>

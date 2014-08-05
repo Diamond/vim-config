@@ -1,9 +1,15 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+alias emacs="emacs-24.3.50 -nw"
+alias e="emacs-24.3.50 -nw"
 alias ls="ls -G"
 alias l="ls -l"
 alias be="bundle exec"
 alias ber="bundle exec ruby"
+alias gg="cd ~/Documents/git/brichey"
 alias dd="cd ~/Documents/dev"
+alias tt="cd ~/Documents/git/teladoc"
+alias demo="cd ~/Documents/git/demo"
+alias resetspec="RAILS_ENV=test bundle exec rake db:drop db:create db:structure:loader"
 alias gs="git status"
 alias gco="git checkout"
 alias gum="git fetch && git checkout master && git pull origin master"
@@ -11,7 +17,6 @@ alias gf="git fetch"
 alias gd="git diff"
 alias www="cd /Library/WebServer/Documents"
 alias v="vim"
-
 PATH=$PATH:/usr/local/share/npm/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 

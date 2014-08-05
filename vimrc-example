@@ -15,6 +15,7 @@ set smartindent
 set cindent
 noremap <F4> :set hlsearch! hlsearch?<CR>
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+noremap <F5> :CtrlPClearCache<CR>
 nmap <Leader>r :execute "!bundle exec rspec % -l " . line(".")
 nmap <Leader>R :!bundle exec rspec %
 nmap <Leader>p :!bundle exec rake parallel:spec

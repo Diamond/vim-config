@@ -24,4 +24,4 @@
 	url = git://github.com/tpope/vim-scriptease.git
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+  url = git://github.com/tpope/vim-sensible.git

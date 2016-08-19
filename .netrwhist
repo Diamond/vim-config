@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/brichey/Documents/git/teladoc/tas/config/initializers'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/brichey/Documents/dev/member_test/node_modules'
+let g:netrw_dirhist_2='/Users/brichey/Documents/dev/phoenix/pxblog/priv/static/js'
+let g:netrw_dirhist_3='/Users/brichey/Documents/git/teladoc/provider'
